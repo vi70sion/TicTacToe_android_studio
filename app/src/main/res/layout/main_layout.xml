@@ -21,101 +21,111 @@
     <Button
         android:id="@+id/button13"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="400dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="170dp"
         android:layout_marginTop="400dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="400dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textColorLink="#000000"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button21"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="500dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button22"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="170dp"
         android:layout_marginTop="500dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button23"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="500dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button31"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="600dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button32"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="170dp"
         android:layout_marginTop="600dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button33"
         android:layout_width="70dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="600dp"
         android:backgroundTint="#08658F"
         android:onClick="buttonClick"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonnew"
@@ -125,7 +135,8 @@
         android:layout_marginTop="700dp"
         android:backgroundTint="#08658F"
         android:onClick="onClick"
-        android:text="Pradėti iš naujo"
+        android:text="New game"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

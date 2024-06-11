@@ -33,24 +33,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonClick(View v) {
-        Button button = (Button) v;
-        int buttonId = v.getId();
-        String buttonIdString = getResources().getResourceEntryName(buttonId).replace("button", "");
-        int line = Character.getNumericValue(buttonIdString.charAt(0)) - 1;
-        int column = Character.getNumericValue(buttonIdString.charAt(1)) - 1;
-        button.setText(String.valueOf(ticgame.getCurrentPlayer()));
-        ticgame.getBoard()[line][column] = ticgame.getCurrentPlayer();
-        if (ticgame.checkWin()) {
-            Toast.makeText((Context) this, "Laimėjo žaidėjas " + ticgame.getCurrentPlayer() + " !", Toast.LENGTH_SHORT).show();
-            return;
+        if(!ticgame.isGameOver()){
+            Button button = (Button) v;
+            int buttonId = v.getId();
+            String buttonIdString = getResources().getResourceEntryName(buttonId).replace("button", "");
+            int line = Character.getNumericValue(buttonIdString.charAt(0)) - 1;
+            int column = Character.getNumericValue(buttonIdString.charAt(1)) - 1;
+            button.setText(String.valueOf(ticgame.getCurrentPlayer()));
+            ticgame.getBoard()[line][column] = ticgame.getCurrentPlayer();
+            if (ticgame.checkWin()) {
+                Toast.makeText((Context) this, "Laimėjo žaidėjas " + ticgame.getCurrentPlayer() + " !", Toast.LENGTH_SHORT).show();
+                ticgame.setGameOver(true);
+                return;
+            }
+            if (ticgame.isBoardFull()) {
+                Toast.makeText((Context) this, "Žaidimas baigtas.Lygiosios", Toast.LENGTH_SHORT).show();
+                ticgame.setGameOver(true);
+                return;
+            }
+            v.setEnabled(false);
+            button.setTextColor(Color.WHITE);
+            ticgame.switchPlayer();
         }
-        if (ticgame.isBoardFull()) {
-            Toast.makeText((Context) this, "Žaidimas baigtas.Lygiosios", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        v.setEnabled(false);
-        button.setTextColor(Color.WHITE);
-        ticgame.switchPlayer();
     }
 
 

@@ -4,6 +4,7 @@ public class TicTacT {
 
     private char[][] board;
     private char currentPlayer;
+    private boolean gameOver = false;
 
     public TicTacT() {
         board = new char[3][3];
@@ -13,6 +14,8 @@ public class TicTacT {
 
     public char[][] getBoard() { return board; }
     public char getCurrentPlayer() { return currentPlayer; }
+    public boolean isGameOver() { return gameOver; }
+    public void setGameOver(boolean gameOver) { this.gameOver = gameOver; }
 
     public void switchPlayer() {
         currentPlayer = (currentPlayer == 'X') ? 'O' : 'X'; //letter "O", not a number
